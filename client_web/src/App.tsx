@@ -9,7 +9,7 @@ function App() {
 
   // connect to the server (wss)
   useEffect(() => {
-    const ws = new WebSocket("ws://localhost:4000");
+    const ws = new WebSocket("ws://localhost:3000");
 
     ws.onopen = () => {
       console.log("Connected to the server");
