@@ -2,9 +2,11 @@
   "type": "module",
   "name": "server",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "dist/server.js",
   "scripts": {
-    "dev": "node --loader ts-node/esm src/server.ts"
+    "dev": "node --loader ts-node/esm src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
