@@ -1,0 +1,7 @@
+static_sites:
+  - name: websocket-chat-client
+    buildCommand: npm install && npm run build
+    publishPath: build
+    env: node
+    plan: free
+    autoDeploy: true
