@@ -9,7 +9,7 @@ function App() {
 
   // connect to the server (wss)
   useEffect(() => {
-    const ws = new WebSocket("ws://localhost:3000");
+    const ws = new WebSocket("https://websockets-node-react-chatapp.onrender.com");
 
     ws.onopen = () => {
       console.log("Connected to the server");
